@@ -1,0 +1,92 @@
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://static-content-1.smadex.com/cr84es/templ8s/end-card-carousel/v1.0/styles/cta-particles-animation-ios.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://static-content-1.smadex.com/cr84es/test/hungerstation/redirection-test/test-1/style.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://static-content-1.smadex.com/cr84es/templ8s/end-card-carousel/v1.0/libs/flickity.css"
+/>
+<script
+  src="https://static-content-1.smadex.com/cr84es/templ8s/end-card-carousel/v1.0/libs/flickity.js"
+  defer
+></script>
+<section class="endcard__carousel" id="smx__carousel_end_card">
+  <figure id="smx-banner" class="smx__banner">
+    <img
+      id="smx-icon"
+      src="https://static-content-1.smadex.com/cr84es/custom/hungerstation/guilles-request/carousel/icon.webp"
+      alt="app-icon"
+    />
+    <figcaption>
+      <h1 id="title">Hungerstation</h1>
+      <button id="our-button" class="our-button particles">Get Now!</button>
+    </figcaption>
+  </figure>
+  <img
+    id="smx_video"
+    src="https://static-content-1.smadex.com/cr84es/test/hungerstation/redirection-test/test-1/landcape-banner.png"
+  />
+  <div
+    class="main-carousel"
+    id="carousel"
+    data-flickity='{ "freeScroll": false, "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true }'
+  >
+    <div class="carousel-cell">
+      <img
+        class="carousel-img"
+        src="https://static-content-1.smadex.com/cr84es/custom/hungerstation/guilles-request/carousel/arabic/compressed/carousel-1.jpg"
+        alt="carousel-image"
+      />
+    </div>
+    <div class="carousel-cell">
+      <img
+        class="carousel-img"
+        src="https://static-content-1.smadex.com/cr84es/custom/hungerstation/guilles-request/carousel/arabic/compressed/carousel-2.jpg"
+        alt="carousel-image"
+      />
+    </div>
+    <div class="carousel-cell">
+      <img
+        class="carousel-img"
+        src="https://static-content-1.smadex.com/cr84es/custom/hungerstation/guilles-request/carousel/arabic/compressed/carousel-3.jpg"
+        alt="carousel-image"
+      />
+    </div>
+    <div class="carousel-cell">
+      <img
+        class="carousel-img"
+        src="https://static-content-1.smadex.com/cr84es/custom/hungerstation/guilles-request/carousel/arabic/compressed/carousel-4.jpg"
+        alt="carousel-image"
+      />
+    </div>
+    <div class="carousel-cell">
+      <img
+        class="carousel-img"
+        src="https://static-content-1.smadex.com/cr84es/custom/hungerstation/guilles-request/carousel/arabic/compressed/carousel-5.jpg"
+        alt="carousel-image"
+      />
+    </div>
+    <div class="carousel-cell">
+      <img
+        class="carousel-img"
+        src="https://static-content-1.smadex.com/cr84es/custom/hungerstation/guilles-request/carousel/arabic/compressed/carousel-6.jpg"
+        alt="carousel-image"
+      />
+    </div>
+    <div class="carousel-cell">
+      <img
+        class="carousel-img"
+        src="https://static-content-1.smadex.com/cr84es/custom/hungerstation/guilles-request/carousel/arabic/compressed/carousel-7.jpg"
+        alt="carousel-image"
+      />
+    </div>
+  </div>
+</section>
+<script>
+  const smxTracking = { clickThrough: "{$CLICK_THROUGH_URL$}", async: "{$ASYNC_CLICK_URL$}", playable_interaction: "{$ASYNC_CLICK_URL_PLAYABLE_INTERACTION$}", redirect: function(src = this.async) { this.printPixel(src); window.open(this.clickThrough); }, printPixel(src) { const px = document.createElement("IMG"); px.style.display = "none"; px.style.width = "1px"; px.style.height = "1px"; px.src = src; }, }; document.getElementById("smx__carousel_end_card").onclick = (e) => { e.stopPropagation(); smxTracking.redirect(); }; document.getElementById("carousel").onclick = (e) => { e.stopPropagation(); }; addEventListener("load", (event) => { var carousel = document.getElementById('carousel'); var flkty = Flickity.data(carousel); try { flkty.on('change', () => { smxTracking.printPixel(smxTracking.playable_interaction); }); } catch (error) {}; });
+</script>
